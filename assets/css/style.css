@@ -276,7 +276,7 @@ header {
   height: auto;
   /* instead of 100% img will be scaled to 115% */
   transform: scale(1.15);
-  /* animate transform and opacity */
+  /* will animate transform and opacity */
   -webkit-transition: transform 0.5s, opacity 0.5s;
   -moz-transition: transform 0.5s, opacity 0.5s;
   -ms-transition: transform 0.5s, opacity 0.5s;
