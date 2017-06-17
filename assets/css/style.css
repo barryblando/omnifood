@@ -25,7 +25,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-.clear-fix { zoom: 1 }
+.clear-fix { zoom: 1; }
 .clear-fix:after {
   content: ' ';
   clear: both;
@@ -43,12 +43,12 @@ html {
  * row will compose of 1-12 columns starting in 2 columns and so on
  * (i.e span 1 of 2, span 2 of 2, span 1 of 3, and so on. responsive grid system.com
  * span 1 of 3 - width: 32.26%; which span 2 of 3 - width: 66.13%; & span 3 of 3 - width: 100%;
- * if you use span 1 of 3 it will only occupy 1 column in row if span 2 of 3 it will occupy 2 column
- * remaining of 1 column in a row. i.e row w/ 3 span1of3 == [1][1][1] span2of3 + span1of3 == [1+1][1]
+ * if you use span 1 of 3 it will only occupy 1 column in row if span 2 of 3 will twice as wide
+ * remaining of 1 column. i.e row w/ 3 span1of3 == [1][1][1], w/ span2of3 + span1of3 == [1+1][1]
  */
 .row {
   /**
-   * this will be the only selector to have absolute value in px (i.e max width), we will define other layout
+   * this will be the only selector to have absolute value in px (i.e max width), we will define some other layout
    * margins, padding w/ percentages and not in px. and we will center row in the web-page
    * margin : 0 auto
    */
@@ -169,7 +169,8 @@ a:active {
 /* Link > Visited > Hover > Active */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -190,7 +191,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -204,12 +206,15 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
   border: 1px solid #cf6d17;
 }
 
@@ -548,3 +553,32 @@ cite img {
 .plan-box ul li {
   padding: 5px 0;
 }
+
+/* ----------------------------------------- */
+/* CONTACT */
+/* ----------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus{ outline: none; }
