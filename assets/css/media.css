@@ -17,7 +17,7 @@
   .row { padding: 0 2%; }
 }
 
-/* Small tablet to big tablet: from 768px to 1023px iPad potrait mode etc */
+/* Small tablet to big tablet: from 768px to 1023px iPad portrait mode etc */
 @media only screen and (max-width: 1023px) {
   /* We will change global font size and elements will follow */
   body { font-size: 18px; }
