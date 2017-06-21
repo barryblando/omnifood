@@ -45,7 +45,7 @@
 
   .plan-box {
     width: 100%;
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   .plan-price { font-size: 250%; }
@@ -81,7 +81,7 @@
 
   .long-copy {
     width: 100%;
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   .app-screen { width: 40%; }
