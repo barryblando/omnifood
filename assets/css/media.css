@@ -51,6 +51,11 @@
   .plan-price { font-size: 250%; }
 
   .contact-form { width: 80%; }
+
+  .footer-nav1 li,
+  .footer-nav2 li {
+    margin-bottom: 15px;
+  }
 }
 
 /* Small phones to small tablets: from 481px to 767px iPhone 6 etc */
@@ -106,4 +111,9 @@
 
   section { padding: 25px 0; }
   .contact-form { width: 100%; }
+
+  .footer-nav1 li,
+  .footer-nav2 li {
+    margin-bottom: 15px;
+  }
 }

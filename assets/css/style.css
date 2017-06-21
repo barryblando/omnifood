@@ -428,7 +428,7 @@ header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  display: inline-block;
+  /*display: inline-block; inline-block & float conflicts so we'll remove inline-block*/ 
   text-align: center;
   margin-right: 25px;
   float: left;
