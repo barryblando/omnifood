@@ -364,6 +364,10 @@ header {
   width: 100%;
   height: auto;
   /* instead of 100% img will be scaled to 115% */
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
   transform: scale(1.15);
   /* will animate transform and opacity, not in the :hover */
   -webkit-transition: transform 0.5s, opacity 0.5s;
