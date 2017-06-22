@@ -17,25 +17,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/media.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav class="sticky">
         <div class="row">
-          <a href="#"><img src="assets/img/logo-white.png" alt="Omnifood Logo" class="logo"></a>
+          <a href="#header"><img src="assets/img/logo-white.png" alt="Omnifood Logo" class="logo"></a>
+          <a href="#header"><img src="assets/img/logo.png" alt="Omnifood Logo" class="logo-black"></a>
           <ul class="main-nav">
-            <li><a href="#">Food Deliver</a></li>
-            <li><a href="#">How it Works</a></li>
-            <li><a href="#">Our Cities</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#features">Food Deliver</a></li>
+            <li><a href="#works">How it Works</a></li>
+            <li><a href="#cities">Our Cities</a></li>
+            <li><a href="#plans">Sign Up</a></li>
           </ul>
         </div><!-- .row end -->
       </nav>
       <div class="hero-text-box">
         <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#"><span class="btn-slanted-content">I’m hungry</span></a>
-        <a class="btn btn-ghost" href="#"><span class="btn-slanted-content">Show me more</span></a>
+        <a class="btn btn-full js--scroll-to-plans" href="#"><span class="btn-slanted-content">I’m hungry</span></a>
+        <a class="btn btn-ghost js--scroll-to-features" href="#"><span class="btn-slanted-content">Show me more</span></a>
       </div> <!-- .hero-text-box end -->
     </header>
-    <section class="section-features">
+    <section id="features" class="section-features js--section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy"> <!-- long paragraph copyright -->
@@ -124,7 +125,7 @@
         </li>
       </ul>
     </section> <!-- .section-meal end -->
-    <section class="section-steps">
+    <section id="works" class="section-steps">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -150,7 +151,7 @@
         </div>
       </div> <!-- .row end -->
     </section> <!-- .section-step end -->
-    <section class="section-cities">
+    <section id="cities" class="section-cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -249,7 +250,7 @@
         </div>
       </div>
     </section> <!-- .section-testimonials end -->
-    <section class="section-plans">
+    <section id="plans" class="section-plans js--section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -404,6 +405,9 @@
         </p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/g/respond@1.4.2,html5shiv@3.7.3,selectivizr@1.0.3b"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
