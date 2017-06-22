@@ -8,7 +8,7 @@ $(document).ready(function () {
     } else {
       $('nav').removeClass('sticky');
     }
-  }, { offset: '70px;' }); //offset shows sticky nav in between of header bottom and section feature top
+  }, { offset: '70px' }); //offset shows sticky nav in between of header bottom and section feature top
 
   /* Scroll on Buttons */
   //when click trigger animation scroll on the top of section plans in a speed of 1s
@@ -52,5 +52,25 @@ $(document).ready(function () {
       } // end 1st if statement
     }); // end click function
   }); // end function
+
+  /* Animation on Scroll using Animate CSS */
+  $('.js--wp-1').waypoint(function (direction) {
+    $('.js--wp-1').addClass('animated fadeIn');
+  }, { offset: '50%' }); // 50% is Half of the Page
+
+  $('.js--wp-2').waypoint(function (direction) {
+    $('.js--wp-2').addClass('animated fadeInUp');
+  }, {offset: '50%'}); // 50% is Half of the Page
+
+
+  $('.js--wp-3').waypoint(function (direction) {
+    $('.js--wp-3').addClass('animated fadeIn');
+  }, {offset: '50%'}); // 50% is Half of the Page
+
+
+  $('.js--wp-4').waypoint(function (direction) {
+    $('.js--wp-4').addClass('animated pulse');
+  }, {offset: '50%'}); // 50% is Half of the Page
+
 
 });

@@ -339,7 +339,6 @@ header {
   -webkit-box-shadow: 0 1px 1px #efefef;
   -moz-box-shadow: 0 1px 1px #efefef;
   box-shadow: 0 1px 1px #efefef;
-  transition: background-color .5s ease-in-out;
   /* define vertical stacking so sticky will always be set on the top of the other elements */
   z-index: 9999;
 }
@@ -729,5 +728,33 @@ footer p {
   margin-top: 20px;
 }
 
+/* ----------------------------------------- */
+/* ANIMATIONS */
+/* ----------------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  /* display none won't work so we will use opacity 0 */
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* class = "js--wp-1 animated" */
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+}
 
 
