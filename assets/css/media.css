@@ -76,6 +76,8 @@
 
   .main-nav { display: none; }
 
+  .mobile-nav-icon { display: inline-block; }
+
   .main-nav {
     float: left;
     margin-top: 35px;
@@ -92,8 +94,6 @@
     padding: 10px 0;
     font-size: 100%;
   }
-
-  .mobile-nav-icon { display: inline-block; }
 
   .sticky .main-nav { margin-top: 10px; }
 
