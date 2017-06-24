@@ -25,7 +25,7 @@ body {
    */
   text-rendering: optimizeLegibility;
   /** 
-   *  white space occured in media query below 500px 'cause of overlaaping text
+   *  white space occurred in media query below 500px 'cause of overlapping text
    *  by .city-feature link
    *  pos x: bad, pos y: good
    *  so we'll put hidden to it.
@@ -329,6 +329,19 @@ header {
   border-color: #e67e22;
 }
 
+/* Mobile Navigation */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
 /* Sticky Navigation */
 .sticky {
   position: fixed;
@@ -339,11 +352,17 @@ header {
   -webkit-box-shadow: 0 1px 1px #efefef;
   -moz-box-shadow: 0 1px 1px #efefef;
   box-shadow: 0 1px 1px #efefef;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   /* define vertical stacking so sticky will always be set on the top of the other elements */
   z-index: 9999;
 }
 
 .sticky .main-nav { margin-top: 18px; }
+.sticky .mobile-nav-icon {  margin-top: 15px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -351,9 +370,9 @@ header {
   color: #555;
 }
 
-/* if logo is inside sticky nav display none */
+/* if logo is inside nav class sticky display none */
 .sticky .logo { display: none; }
-/* if logo black is inside sticky nav display block */
+/* if logo black is inside nav class sticky display block */
 .sticky .logo-black { display: block; }
 
 

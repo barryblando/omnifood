@@ -3,7 +3,7 @@ $(document).ready(function () {
   /* For the Stick Navigation */
   //direction detects if user scroll down or up
   $('.js--section-features').waypoint(function(direction) {
-    if( direction === "down" ) {
+    if ( direction === "down" ) {
       $('nav').addClass('sticky');
     } else {
       $('nav').removeClass('sticky');
@@ -72,5 +72,21 @@ $(document).ready(function () {
     $('.js--wp-4').addClass('animated pulse');
   }, {offset: '50%'}); // 50% is Half of the Page
 
+  /* Mobile Navigation */
+  $('.js--nav-icon').click(function () {
+    let nav = $('.js--main-nav');
+    let icon = $('.js--nav-icon i');
 
-});
+    nav.slideToggle(250);
+
+    if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+    } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+    }
+
+  });
+
+}); // end document ready
