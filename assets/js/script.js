@@ -11,7 +11,7 @@ $(document).ready(function () {
   }, { offset: '70px' }); //offset shows sticky nav in between of header bottom and section feature top
 
   /* Scroll on Buttons */
-  //when click trigger animation scroll on the top of section plans in a speed of 1s
+  //when clicked trigger animation scroll on the top of section plans in a speed of 1s
   $('.js--scroll-to-plans').click(function () {
     $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
   });
