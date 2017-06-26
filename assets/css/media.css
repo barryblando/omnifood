@@ -50,12 +50,10 @@
 
   .plan-price { font-size: 250%; }
 
-  .contact-form { width: 80%; }
+  .contact-form { width: 90%; }
 
   .footer-nav1 li,
-  .footer-nav2 li {
-    margin-bottom: 15px;
-  }
+  .footer-nav2 li { margin-bottom: 15px; }
 }
 
 /* Small phones to small tablets: from 481px to 767px iPhone 6 etc */
@@ -123,6 +121,30 @@
 
   .works-step { margin-bottom: 45px; }
   .works-step:last-of-type { margin-bottom: 20px; }
+
+  .map-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .map {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .form-box {
+    /** 
+      * so let's  not overlap it to parent element: map-box  
+      * and make it relative pos
+      */
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+  }
 }
 
 /* Small phones: from 0 to 480px iPhone 5 etc */
