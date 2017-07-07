@@ -77,6 +77,7 @@ $(document).ready(function () {
     let nav = $('.js--main-nav');
     let icon = $('.js--nav-icon i');
 
+    /* Slide toggle animation ease in out 250ms */
     nav.slideToggle(250);
 
     if (icon.hasClass('ion-navicon-round')) {

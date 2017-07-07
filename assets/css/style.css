@@ -618,7 +618,7 @@ cite img {
 }
 
 .plan-price span {
-  /* so lets get the 30% font size of parent plan-price selector which is 300% / 20px */
+  /* so lets get the 30% font size of parent plan-price selector which is 300% or 3 * 20px */
   font-size: 30%;
   font-weight: 300;
 
