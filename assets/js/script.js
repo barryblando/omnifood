@@ -1,9 +1,10 @@
 $(document).ready(function () {
-
+  /* document ready, waiting to load/render first html css files before executing javascript */
+  
   /* For the Stick Navigation */
   //direction detects if user scroll down or up
   $('.js--section-features').waypoint(function(direction) {
-    if ( direction === "down" ) {
+    if ( direction === 'down' ) {
       $('nav').addClass('sticky');
     } else {
       $('nav').removeClass('sticky');
@@ -21,7 +22,6 @@ $(document).ready(function () {
   });
 
   /* Navigation scroll */
-
   $(function () {
     // Remove links that don't actually link to anything
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
@@ -62,11 +62,9 @@ $(document).ready(function () {
     $('.js--wp-2').addClass('animated fadeInUp');
   }, {offset: '50%'}); // 50% is Half of the Page
 
-
   $('.js--wp-3').waypoint(function (direction) {
     $('.js--wp-3').addClass('animated fadeIn');
   }, {offset: '50%'}); // 50% is Half of the Page
-
 
   $('.js--wp-4').waypoint(function (direction) {
     $('.js--wp-4').addClass('animated pulse');
@@ -89,7 +87,6 @@ $(document).ready(function () {
     }
 
   });
-
 
   /* Maps */
   var map = new GMaps({
