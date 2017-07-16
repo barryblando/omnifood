@@ -70,13 +70,13 @@ $(document).ready(function () {
     $('.js--wp-4').addClass('animated pulse');
   }, {offset: '50%'}); // 50% is Half of the Page
   */
-  
+
   AOS.init({
       offset: 200,
       duration: 500,
       easing: 'ease-in-sine',
       delay: 100,
-    });
+  });
 
 
   /* Mobile Navigation */
