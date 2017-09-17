@@ -48,7 +48,7 @@ body {
 
 /**
  * Analysis :
- * row will compose of 1-12 columns starting in 2 columns and so on
+ * row will compose of 1-12 columns starting in 2 and so on
  * (i.e span 1 of 2, span 2 of 2, span 1 of 3, and so on. responsive grid system.com
  * span 1 of 3 - width: 32.26%; which span 2 of 3 - width: 66.13%; & span 3 of 3 - width: 100%;
  * if you use span 1 of 3 it will only occupy 1 column in row if span 2 of 3 will twice as wide
@@ -258,7 +258,9 @@ input[type="submit"] {
 /* HEADER */
 /* ----------------------------------------- */
 
-/* Background image linear gradient 70% transparency, cover for fill screen, centered position */
+/* 
+ *Background image linear gradient 70% transparency, cover for fill screen, centered position 
+*/
 header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);

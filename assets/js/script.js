@@ -98,10 +98,10 @@ $(document).ready(function () {
   });
 
   /* Maps */
-  var map = new GMaps({
+  let map = new GMaps({
     div: '.map',
     lat: 38.7436266,
-    lng: -9.0, 
+    lng: -9.0,
     zoom: 12
   });
 
