@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-html, 
+html,
 body {
   background-color: #fff;
   color: #555;
@@ -24,7 +24,7 @@ body {
    * This enables kerning and optional ligatures. In short, text rendering in a nice way.
    */
   text-rendering: optimizeLegibility;
-  /** 
+  /**
    *  white space occurred in media query below 500px 'cause of overlapping text
    *  by .city-feature link
    *  pos x: bad, pos y: good
@@ -258,8 +258,8 @@ input[type="submit"] {
 /* HEADER */
 /* ----------------------------------------- */
 
-/* 
- *Background image linear gradient 70% transparency, cover for fill screen, centered position 
+/*
+ *Background image linear gradient 70% transparency, cover for fill screen, centered position
 */
 header {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
@@ -490,7 +490,7 @@ header {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  /*display: inline-block; inline-block & float conflicts so we'll remove inline-block*/ 
+  /*display: inline-block; inline-block & float conflicts so we'll remove inline-block*/
   text-align: center;
   margin-right: 25px;
   float: left;
@@ -681,9 +681,9 @@ input[type="checkbox"] {
 }
 
 .form-box {
-  /** 
-    * so let's overlap it to parent element: map-box  
-    * and make it absolute pos and set it to right 
+  /**
+    * so let's overlap it to parent element: map-box
+    * and make it absolute pos and set it to right
     */
   position: absolute;
   width: 50%;
